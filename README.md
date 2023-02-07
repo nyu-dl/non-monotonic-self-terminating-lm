@@ -1,11 +1,15 @@
 # A Non-monotonic Self-terminating Language Model
 
 The official repository of the ICLR 2023 conference paper, **"A Non-monotonic Self-terminating Language Model"**.
-[[ArXiv](https://arxiv.org/abs/2210.00660)] [[Openreview](https://openreview.net/forum?id=vw-5EgYbJZr)]
 
 **Authors**: [Eugene Choi](https://eugene-choi.github.io/), [Kyunghyun Cho](https://www.kyunghyuncho.me/), [Cheolhyoung Lee](https://sites.google.com/view/cheolhyounglee)
 
-![Non-monotonic p(eos) plot](/eos.png)
+[[ArXiv](https://arxiv.org/abs/2210.00660)] [[Openreview](https://openreview.net/forum?id=vw-5EgYbJZr)]
+
+
+<!--- ![Non-monotonic p(eos) plot](/eos.png) --->
+<img src="https://github.com/nyu-dl/non-monotonic-self-terminating-lm/blob/main/eos.png" width=70% height=70%>
+
 ## 1. Overview:
 The repository is organized as follows.
 ```!
@@ -130,20 +134,28 @@ The `eval.py` scipt supports greedy decoding, ancestral sampling, top-k sampling
 
 ## 4. Logs:
 The Weights and Biases logs for all experimental results can be accessed through the links provided below:
+
 ### WikiText-2:
+
 #### Training:
 https://wandb.ai/eugenechoi/nmst-rnn/workspace?workspace=user-eugenechoi
+
 (Note: You can filter the logs to view only the `RNN` or `LSTM` experiments by selecting `rnn_type` from the filter dropdown menu.)
+
 ### WikiText-103:
 #### Training:
 https://wandb.ai/eugenechoi/nmst-gpt2/workspace?workspace=user-eugenechoi
+
 #### Decoding:
-- **Greedy**:
+- **Perplexity & Greedy**:
 https://wandb.ai/eugenechoi/nmst-gpt2-greedy/workspace?workspace=user-eugenechoi
+
 - **Nucleus**:
 https://wandb.ai/eugenechoi/nmst-gpt2-topp/workspace?workspace=user-eugenechoi
+
 - **Top-k**:
 https://wandb.ai/eugenechoi/nmst-gpt2-topk/workspace?workspace=user-eugenechoi
+
 - **Beam Search**:
 https://wandb.ai/eugenechoi/nmst-gpt2-beam/workspace?workspace=user-eugenechoi
 
